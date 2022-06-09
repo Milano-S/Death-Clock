@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Death Clock</string>
+
+    <string-array name="outlooks">
+        <item>Complete Happiness</item>
+        <item>Optimistic</item>
+        <item>Neutral</item>
+        <item>Pessimistic</item>
+        <item>Suicidal</item>
+    </string-array>
+
+    <string-array name="drinking">
+        <item>Never</item>
+        <item>Once A month</item>
+        <item>2–4 times a month</item>
+        <item>Twice a week</item>
+        <item>Daily</item>
+        <item>Always Drunk</item>
+    </string-array>
+
+</resources>
