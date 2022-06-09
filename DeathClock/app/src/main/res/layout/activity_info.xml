@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222222"
     tools:context=".InfoActivity">
 
 
@@ -25,7 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
             android:hint="Enter Your Name"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
 
         <EditText
@@ -36,7 +39,9 @@
             android:ems="10"
             android:hint="Enter Your Age"
             android:inputType="number"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
         <EditText
             android:id="@+id/etGender"
@@ -44,7 +49,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
             android:hint="Enter Your Gender"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -52,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
+            android:textColorHint="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -64,7 +72,8 @@
                 android:layout_weight="1"
                 android:inputType="none"
                 android:text="Choose Outlook on Life"
-                />
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,6 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
+            android:textColorHint="@color/white"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -85,7 +95,8 @@
                 android:layout_weight="1"
                 android:inputType="none"
                 android:text="How Often do you Drink?"
-                />
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -95,7 +106,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="3dp"
-            android:text="Return" />
+            android:backgroundTint="@color/teal_700"
+            android:text="Return"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

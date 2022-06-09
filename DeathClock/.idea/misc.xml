@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/DeathClock/app/src/main/res/layout-v31/activity_main.xml" value="0.203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/DeathClock/app/src/main/res/layout/activity_info.xml" value="0.25" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/DeathClock/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/DeathClock/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/DeathClock/app/src/main/res/layout/dropdown_item.xml" value="0.152734375" />
       </map>
     </option>

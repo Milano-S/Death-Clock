@@ -44,13 +44,12 @@ class InfoActivity : AppCompatActivity() {
 
             Intent(this, MainActivity::class.java).also {
 
+                it.putExtra("EXTRA_MS",ms)
                 it.putExtra("EXTRA_NAME", name)
                 it.putExtra("EXTRA_AGE", age)
                 it.putExtra("EXTRA_GENDER", gender)
                 it.putExtra("EXTRA_OUTLOOK", outlook)
                 it.putExtra("EXTRA_DRINK", drink)
-
-                it.putExtra("EXTRA_MS",ms)
                 startActivity(it)
             }
         }

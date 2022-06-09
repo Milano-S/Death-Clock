@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="@color/material_dynamic_neutral_variant30"
     tools:context=".MainActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_margin="5dp"
         android:gravity="left"
         android:orientation="vertical"
@@ -67,10 +66,10 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:text="Outlook"
-                android:textColor="@color/white"
                 android:textSize="17sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/tvDrink"
@@ -83,19 +82,24 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
-            <Button
-                android:id="@+id/btnInfo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="3dp"
-                android:backgroundTint="@color/teal_700"
-                android:text="Change Info"
-                android:textColor="@color/white" />
 
 
         </LinearLayout>
 
+
+        <Button
+            android:id="@+id/btnWWID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:backgroundTint="@android:color/system_accent1_500"
+            android:text="When will I die"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -110,33 +114,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/textView2"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:src="@drawable/skul"
-            android:text="☠"
-            android:textColor="@color/white" />
-
-        <TextView
-            android:id="@+id/tvY"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:gravity="center_horizontal"
-            android:text="You will die in: "
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-
         <TextView
             android:id="@+id/tvYears"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Years"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -145,7 +127,7 @@
             android:id="@+id/tvMonths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Months"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -154,7 +136,7 @@
             android:id="@+id/tvDays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Days"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -163,7 +145,7 @@
             android:id="@+id/tvHours"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Hours"
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -172,7 +154,7 @@
             android:id="@+id/tvMinutes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Minutes: "
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -181,7 +163,7 @@
             android:id="@+id/tvSeconds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="6dp"
+            android:layout_margin="10dp"
             android:text="Seconds: "
             android:textColor="@color/white"
             android:textSize="18sp" />
@@ -192,8 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="3dp"
-            android:backgroundTint="@color/teal_700"
-            android:text="Calculate Lifespan"
+            android:background="@color/black"
+            android:text="Extend Lifespan"
             android:textColor="@color/white" />
 
     </LinearLayout>

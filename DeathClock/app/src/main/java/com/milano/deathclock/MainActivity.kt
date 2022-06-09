@@ -35,21 +35,7 @@ class MainActivity : AppCompatActivity() {
         val outlook = intent.getStringExtra("EXTRA_OUTLOOK")
         val drink = intent.getStringExtra("EXTRA_DRINK")
 
-        val millieSeconds = intent.getIntExtra("EXTRA_MS", 0)
-
-        tvName.text = name
-        if (tvName.text.toString().isEmpty()) {
-            tvName.text = "Your Name"
-        }
-
-        tvAge.text = "Age: " + age
-        if (tvAge.text.toString().isEmpty()) {
-            tvAge.text = "Your Age"
-        }
-
-        binding.tvGender.text = gender
-        binding.tvOutlook.text = "Your Outlook on life is " + outlook
-        binding.tvDrink.text = "Your drinking frequency is " + drink
+        val millieSeconds = intent.getIntExtra("EXTRA_MS", 31556952000.toInt())
 
         object : CountDownTimer(millieSeconds.toLong(), 1000) {
 
@@ -80,6 +66,21 @@ class MainActivity : AppCompatActivity() {
                 tvYears.text = "Years: 0"
             }
         }.start()
+
+        tvName.text = name
+        if (tvName.text.toString().isEmpty()) {
+            tvName.text = "Your Name"
+        }
+
+        tvAge.text = "Age: " + age
+        if (tvAge.text.toString().isEmpty()) {
+            tvAge.text = "Your Age"
+        }
+
+        binding.tvGender.text = gender
+        binding.tvOutlook.text = "Your Outlook on life is " + outlook
+        binding.tvDrink.text = "Your drinking frequency is " + drink
+
 
         btnExtend.setOnClickListener {
             Intent(this, InfoActivity::class.java).also {
